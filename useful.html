@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Easy English. Мы помогаем учить английский.</title>
+		<!--[if IE]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+		<style type="text/css">
+/* обнуляем все элементы */
+			* 
+				{
+				margin:0;
+				padding:0;
+				outline:none;
+				}  
+				
+/* --- Общие стили --- */ 
+			
+			html 
+				{
+				font-size:75%;
+				height:100%;
+				} 
+			body 
+				{
+				font:normal 1em/1.3 arial, helvetica, sans-serif;
+				color:#333;height:100%;
+				background:#f0f0f0;
+				} 
+			a 
+				{
+				color:#2b82dc;
+				}
+			aside:hover a, footer:hover a, p:hover a 
+				{
+				color:#0E6994;
+				} 
+			a:hover 
+				{
+				text-decoration:none;
+				color:#0E6994;
+				} 
+			abbr 
+				{
+				border-bottom:1px dotted #2b82dc;
+				cursor:help;
+				} 
+			h1, h2, h3, h4, h5, h6 
+									{
+									font-weight:bold;
+									line-height:1;
+									margin:4px 0 12px;
+									padding:4px;
+									color:#0000CD;
+									} 
+			h1 
+				{
+				font-size:1.88em;
+				font-weight:bold;
+				} 
+			h2 + a 
+					{
+					margin-bottom:10px;
+					}
+			li 
+				{
+				font-size:14px;
+				margin-bottom:10px;
+				margin-left:40px;
+				}
+			td 
+				{
+				font-size:14px;
+				padding-left:20px;
+				}
+			p 
+				{
+				font-size:14px;
+				text-align:justify;
+				word-spacing:.1ex;
+				line-height:1.6;
+				padding-left:4px;
+				margin-bottom:1em;
+				} 
+			ul 
+				{
+				font-size:14px;
+				list-style:none;
+				} 
+			ol 
+				{
+				list-style-position:inside;
+				}
+			.video 
+					{
+					 margin: 0 auto; 
+					 text-align: center;
+					}
+			summary 
+					{
+					margin-left:1em;
+					font-weight:bold;
+					color: #0000CD;
+					}
+			form 
+				{
+				margin:1em;
+				padding:.5em;
+				}
+			input[id=contact_name]
+								{
+								padding-left:5px;
+								margin-left:53px;
+								}
+								
+			input[id=contact_email]
+								{
+								padding-left:5px;
+								margin-left:41px;
+								}
+			input[id=contact_phone]
+								{
+								padding-left:5px;
+								margin-left:26px;
+								}
+			input[type=submit] 
+								{
+								border-radius:10px;
+								color: #2ca9e4;
+								padding:0.5em;
+								margin-left:2em;
+								}
+			/* делаем семантические тэги - блочными */ 	
+			header, nav, section, article, aside, footer 
+														{
+														display:block;
+														position:relative;
+														} 
+														
+			/* выравниваем страницу по центру, делаем отступы и цвет фона */ 			
+			#main 
+				{
+				width:1000px;
+				min-height:100%;
+				padding:0 50px;
+				margin:0 auto;
+				background:#FFFFE0;
+				} 
+				
+			/* пишем класс для шапки - header */ 			
+			.h 
+				{
+				overflow:hidden;
+				height:40px;
+				padding:35px 0px 25px 0;
+				} 
+				
+			/* меню навигации */ 
+			nav 
+				{
+				width:100%;
+				height:32px;
+				background:#0000CD;
+				/* border-radius:20px;*/
+				} 
+			nav li 
+					{
+					float:left;
+					margin:8px 20px 2px;
+					} 
+			nav a 
+					{
+					font-weight:bold;
+					text-decoration:none;
+					color:#fff;
+					} 
+			nav a:hover 
+						{
+						text-decoration:underline;
+						color:#fff;
+						} 
+			
+			/* область основного контента */ 
+			section 
+					{
+					overflow:hidden;
+					}
+					
+			/* стиль для картинки */ 
+			.image 
+					{
+					width:100%;
+					margin:10px 0;
+					} 
+			figure {
+					padding: 10px; /* Поля вокруг */
+					display: block; /* Блочный элемент */
+					width: 550px; /* Ширина */
+					margin: 0 10px 10px 0; /* Отступы */
+					text-align: center; /* Выравнивание по центру */
+				   }
+			figcaption {
+						color: #2ca9e4; /* Цвет текста */
+						font-size:1.2em;
+					   }		
+			 mark {
+					background: #ffec82;
+					padding: 1px 3px;
+					border: 1px dashed #333;
+				   }
+			/* внутренняя область контента */ 
+			section section 
+							{
+							float:left;
+							width:640px;
+							} 
+							
+			/* правая часть */ 
+			aside 
+				{
+				overflow:hidden;
+				width:1000px;
+				padding:0 30px;
+				} 
+				
+			/* нижняя часть - footer */ 
+			footer 
+					{
+					height:60px;
+					padding:25px 25px 0;
+					margin:20px 0 0;
+					border-top:1px solid #0E6994;
+					} 
+					
+			/* стили для выделения областей HTML */ 
+			.tag 
+				{
+				position:absolute;
+				right:6px;top:2px;
+				font-size:11px;
+				font-style:normal;
+				} 
+			header:hover, nav:hover, section:hover, article:hover, aside:hover, footer:hover 
+																							{
+																							
+																							} 
+			section section:hover, section aside:hover 
+														{
+														
+														} 
+			section article:hover 
+									{
+									
+									} 
+			article header:hover 
+									{
+									background:#FFD25D;
+									color:#777;
+									} 
+			section article .tag 
+								{
+								top:12px;
+								} 
+			article header .tag 
+								{
+								right:70px;
+								top:2px;
+								} 
+			aside .tag 
+						{
+						top:12px;
+						}
+		</style>
+	</head>
+	<body>
+		<div id="main"> <!-- Главный блок всей страницы (обертка) -->
+			
+			<!-- Тэг header  -->
+			<header class="h">
+				<h1>Easy English. Мы помогаем учить английский  язык.</h1>
+				<!-- <i class="tag">&lt;header&gt;</i>-->
+			</header>
+			<!-- Тэг section для вставки изображения логотипа -->
+				<img class="image" src="6.jpg" alt="" />
+			<!-- Тэг nav -->
+			<nav>
+			<h2 hidden>Навигация по сайту Easy English</h2>
+				<ul>
+					<li><a href="easy_english.html">О компании</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="useful.html">Полезные статьи</a></li>
+					<li><a href="video_resources.html">Видео ресурсы</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+					<li><a href="author.html">Автор</a></li>					
+				</ul>
+				<!--<i class="tag">&lt;nav&gt;</i>-->
+			</nav>
+			
+			<!-- Блок всего контента страницы -->
+			<section>
+			<header class="h">
+				<h1>Полезные ссылки для самостоятельного изучения английского языка</h1>
+				<!-- <i class="tag">&lt;header&gt;</i>-->
+			</header>
+				<!-- Третья статья контента -->
+				<article>
+						<header>
+							<h2>Общение:</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<ul type="circle">
+						  <li type=circle><a href="http://www.interpals.net/index.php">Interpals</a>
+						   - здесь можно найти много друзей по переписке со всего мира и помогать им изучать язык.</li>
+						  <li type=circle><a href="https://www.postcrossing.com">Postcrossing</a>
+						   - международный проект, суть которого заключается в обмене открытками между случайно выбранными людьми, в большинстве случаев на английском языке.</li>
+						  <li type=circle><a href="https://www.mylanguageexchange.com">Mylanguageexchange</a>
+						   - социальная сеть, в которой можно выбрать идеального партнера по языку: указать родной язык, страну и примерный возраст желаемого напарника.</li>
+						  <li type=circle><a href="https://www.real-english.com">Real-English</a>
+						   - сайт с уроками, статьями и видео.</li>
+						  <li type=circle><a href="https://www.rosettastone.com/">Sharedtalk</a>
+						   - здесь можно пообщаться с иностранцами по чату и микрофону.</li>
+						</ul>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+				</article>
+				<article>
+						<header>
+							<h2>Видеоканалы:</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<ul type="circle">
+						  <li type=circle><a href="https://www.youtube.com/playlist?list=PL66DIGaegedqtRaxfVsk6vH5dBDuL5w92">Poliglot</a>
+						   - интеллектуальное реалити-шоу, образовательная программа "Полиглот". Выучим английский за 16 часов!" представляет собой интенсивный курс изучения английского языка под руководством полиглота и переводчика Д. Ю. Петрова.</li>
+						  <li type=circle><a href="https://www.youtube.com/user/twominenglish">Twominute English</a>
+						   - короткие двухминутные уроки, удобно и эффективно.</li>
+						  <li type=circle><a href="https://www.youtube.com/user/StorylineOnline/featured">StorylineOnline</a>
+						   - известные и не очень актеры читают вслух небольшие, минут до 15, детские сказки. Есть субтитры.</li>
+						  <li type=circle><a href="https://www.youtube.com/user/FilmTrailerZone">FilmTrailerZone</a>
+						   - трейлеры фильмов на английском.</li>
+						  <li type=circle><a href="https://www.youtube.com/channel/UCjAZw68tdv7PctCALk1-bZw">Английский как по нотам</a>
+						   - изучение английского с помощью музыки, игр, фильмов и юмора.</li>
+						</ul>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+				</article>
+				<article>
+						<header>
+							<h2>Аудирование:</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<ul type="circle">
+						  <li type=circle><a href="https://show-english.com/">Ororo.tv</a>
+						   - фильмы и сериалы на английском языке со встроенным переводчиком.</li>
+						  <li type=circle><a href="https://www.bbc.co.uk/sounds">Bbc.co.uk/radio</a>
+						   - радио BBC, можно выбрать интересующую программу или жанр.</li>
+						  <li type=circle><a href="http://learnenglish.britishcouncil.org/">Learnenglish.Britishcouncil</a>
+						   - огромное количество подкастов и не только.</li>
+						  <li type=circle><a href="http://www.todayifoundout.com/">Todayifoundout</a>
+						   - рассказы о каком-нибудь занимательном факте на 5–10 минут.</li>
+						   <li type=circle><a href="https://www.homeenglish.ru/Lessonsaudio.htm">HomeEnglish</a>
+						   - аудиоуроки радиостанции «Голос Америки» (Voice of America / VOA). Аудиоуроки представляют из себя аудиофайлы по различным темам от простого к сложному.</li>
+						   <li type=circle><a href="http://esl-bits.net/ESL.English.Learning.Audiobooks/ESL.English.Learning.Audiobooks.html">Esl-Bits</a>
+						   - аудиокниги на английском языке. Доступны текстовые варианты книг и выбор скорости чтения.</li>
+						  <li type=circle><a href="http://begin-english.ru/radio">Begin-English.ru/radio</a>
+						   - основные радиостанции Англии и США на английском языке.</li>
+						</ul>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+				</article>
+				<article>
+						<header>
+							<h2>Чтение:</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<ul type="circle">
+						  <li type=circle><a href="https://www.newsinlevels.com/">Newsinlevels</a>
+						   - здесь можно почитать новости с уровнями для изучающих английский.</li>
+						  <li type=circle><a href="https://www.readtheory.org/">ReadTheory</a>
+						   - сайт для развития навыков чтения.</li>
+						  <li type=circle><a href="https://americanliterature.com/">AmericanLiterature</a>
+						   - онлайн-библиотека американской литературы.</li>
+						  <li type=circle><a href="http://www.eastoftheweb.com/short-stories/">ShortStories</a>
+						   - сервис, на котором собраны самые разные английские рассказы.</li>
+						</ul>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+				</article>
+				<article>
+						<header>
+							<h2>Грамматика:</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<ul type="circle">
+						  <li type=circle><a href="https://english03.ru/soderzhanie_murphy">English03</a>
+						   - полный разбор известного учебника Essential Grammar in Use («красный Мёрфи»).</li>
+						  <li type=circle><a href="https://www.ego4u.com/">Ego4u</a>
+						   - изучение грамматики онлайн с упражнениями, тестами и правильными ответами.</li>
+						  <li type=circle><a href="http://www.myspelling.net/">MySpelling</a>
+						   - портал для практики правописания, доступен без регистрации.</li>
+						  <li type=circle><a href="http://www.macmillandictionaries.com/features/verb-wheel/">MacmillanDictionaries</a>
+						   - формы неправильных глаголов английского языка в формате интерактивной рулетки.</li>
+						  <li type=circle><a href="https://www.irregularverbs.ru/">IrregularVerbs</a>
+						   - на этом сайте очень легко можно выучить английские неправильные глаголы.</li>
+						</ul>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+				</article>
+									
+						<!--<i class="tag">&lt;section&gt;</i>-->
+			</section><br><br> <!-- Нижняя граница левой части контента -->
+			<aside>
+			<h2 hidden>Дополнительные ссылки</h2>
+				<table align=center width=900>
+				<tr><td width=300><a href="https://ru.wikipedia.org/wiki/">Википедия</a><br><em>Узнайте больше о популярности английского языка в мире.</em></td><td width=300><a href="https://www.windsor.ru/stat/lifehack/6261/">Школа Windsor</a><br><em>Вы всегда можете сравнить цены и услуги в других школах.</em></td><td width=300><a href="https://www.bbc.com/">BBC</a><br><em>С нами Вы сможете понимать всё, о чём здесь говорят и пишут.</em></td><tr>
+				</table>
+			</aside>			
+			<!-- Авторская часть страницы footer -->
+			<footer>
+				Copyright &copy; 2019 <a href="easy_english.html" rel="copyright">Easy English</a>.All rights reserved. <br>
+				Email:<a href="mailto:maryrusinovich@gmail.com"> maryrusinovich@gmail.com</a><br>
+				Контактный телефон:<a href="tel: +375298513102"> 8513102</a><br><br> 
+				<!--<i class="tag">&lt;footer&gt;</i>-->
+			</footer>
+		</div> <!-- Границы главного блока (обертки) страницы -->
+	</body>
+</html>
